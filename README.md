@@ -6,7 +6,6 @@ An ESP32-WROOM-32 bridge for controlling an LED controller from an iPhone to imp
 
 - The ESP32 has connected to the LED controller over BLE.
 - The controller was identified as `be:16:15:01:d4:ed`, service `FFF0`, characteristic `FFF3`.
-- The documented ON, OFF, and RGB command frames are recorded in [the development notes](docs/DEVELOPMENT_NOTES.md).
 - Matter was tested separately, but Matter plus the BLE client exceeded available runtime memory on the tested ESP32-WROOM-32 (no PSRAM). The Shortcut bridge is the practical V1 direction for this board.
 - The current firmware uses HTTP on the home LAN. Remote access is not configured.
 
@@ -46,7 +45,7 @@ In the sketch, `WIFI_SSID` means your Wi-Fi network name and `WIFI_PASSWORD` mea
 1. Upload `Main_program.ino` to the ESP32.
 2. Keep the ESP32 and iPhone on the same home Wi-Fi network.
 3. Read the ESP32's current IP address from Serial Monitor.
-4. In Shortcuts, use **URL** followed by **Get Contents of URL** with the bridge endpoint. See [Shortcuts setup](docs/SHORTCUTS.md).
+4. In Shortcuts, use **IP-Address** followed by **Get Contents of URL** with the bridge endpoint. See [Shortcuts setup](docs/SHORTCUTS.md).
 
 ## Planned V2
 
