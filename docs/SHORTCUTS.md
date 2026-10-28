@@ -23,6 +23,3 @@ Create two **Personal Automations** with **Time of Day** triggers: daily at suns
 
 If the phone is away from home, the local IP request will fail unless a VPN connects it to the home network. The automation trigger can still fire, but the ESP32 must be reachable when the action runs.
 
-## Remote access
-
-The current HTTP bridge has no authentication. Do not port-forward it to the public internet. Use a VPN such as a router VPN or a private-network setup with a subnet router on an always-on home device. Then keep using the ESP32's LAN IP from the Shortcut.
