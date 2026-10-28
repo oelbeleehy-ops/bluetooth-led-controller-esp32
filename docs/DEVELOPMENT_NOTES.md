@@ -13,6 +13,8 @@ Device found: Name: MELK-OA21   ED, Address: be:16:15:01:d4:ed, rssi: -67
 After further testing, I found:
 - Service UUID: `FFF0`
 - Writable characteristic UUID: `FFF3`
+Using my Bluetooth Service Checker and then my Current State Checker.
+After this, I tested if the controls work by using the Serial Monitor to input actions and see if the strip responds before implementing any sort of HTML using my test_prog.ini.
 
 ## Matter experiment
 
