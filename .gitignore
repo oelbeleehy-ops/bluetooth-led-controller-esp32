@@ -1,0 +1,9 @@
+# Keep local credentials and build outputs out of GitHub.
+secrets.h
+**/secrets.h
+*.local.h
+build/
+.DS_Store
+*.elf
+*.bin
+*.map
